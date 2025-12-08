@@ -4,7 +4,7 @@
 This page contains the workflow, functions, analysis, and outputs for my project completed as part of PSY6422: Data Analysis & Visualisation at the University of Sheffield.
 The work investigates replication outcomes and effect sizes in science using the FReD dataset (replication database) 
 
-Live website: https://willrowe12345.github.io/PSY-6422-Replication-Project/ 
+Live website: https://willrowe12345.github.io/PSY6422-Replication-Project/ 
 
 ## Folder summary: 
 * markdown.qmd - main analysis and report 
