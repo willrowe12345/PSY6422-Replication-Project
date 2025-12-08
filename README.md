@@ -17,3 +17,6 @@ Live website: https://willrowe12345.github.io/PSY6422-Replication-Project/
 renv.lock – ensures reproducible R package versions
 
 All analysis is written in R using a reproducible Quarto workflow.
+
+The original data set can be found here. https://willrowe12345.github.io/PSY6422-Replication-Project/ which is linked from the FORRT replication hub :https://forrt.org/replication-hub/ 
+At the time of this project, this was last updated on 15th June 2025.
