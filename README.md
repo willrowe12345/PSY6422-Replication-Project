@@ -11,7 +11,8 @@ Live website: https://willrowe12345.github.io/PSY6422-Replication-Project/
 * docs/ – rendered website files for GitHub Pages 
 * R/ – helper functions and themes 
 * figures/ – saved plots used in the report 
-* materials/ – codebook 
+* materials/ – codebook
+* data/ - the Excel file of the original data 
 
 ## Other files:
 renv.lock – ensures reproducible R package versions
