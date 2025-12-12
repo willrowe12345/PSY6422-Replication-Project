@@ -7,7 +7,7 @@ The work investigates replication outcomes and effect sizes in science using the
 Live website: https://willrowe12345.github.io/PSY6422-Replication-Project/ 
 
 ## Folder summary: 
-* markdown.qmd - main analysis and report 
+* mini_project.qmd - main analysis and report 
 * docs/ – rendered website files for GitHub Pages 
 * R/ – helper functions and themes 
 * figures/ – saved plots used in the report 
