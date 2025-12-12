@@ -46,7 +46,6 @@ library(janitor)
 library(stringr)
 library(purrr)
 library(dplyr)
-library(plotly)
 library(naniar)
 library(ggtext)
 library(ggExtra)
@@ -691,6 +690,12 @@ If I had more time, I would extend the analysis by exploring how categorical stu
 
 I briefly experimented with interactive visualisations (e.g., Plotly), but chose a static plot to maintain clarity and focus for the final figure. A next step would be to develop an interactive dashboard (likely shiny) to allow users to filter studies by outcome, journal, year, or sample size. Building a dashboard was beyond the current scope of this project for me, but this work has motivated me to continue learning Shiny and interactive visualisation techniques.
 
+# References
+
+Aarts, E., Verhage, M., Veenvliet, J. V., Dolan, C. V., & Van Der Sluis, S. (2014). A solution to dependency: using multilevel analysis to accommodate nested data. Nature neuroscience, 17(4), 491-496.
+
+Mesquida, C., Murphy, J., Lakens, D., & Warne, J. (2023). Publication bias, statistical power and reporting practices in the Journal of Sports Sciences: potential barriers to replicability. Journal of Sports Sciences, 41(16), 1507-1517.
+
 ```{r}
 #| include: false
 
@@ -713,26 +718,4 @@ replication_codebook <- codebook(
 print(replication_codebook, here("materials", "replication_codebook.docx"))
 
 
-```
-
-```{r}
-#| include: false
-#| label: tbl-effect-level-definitions
-#| tbl-cap: "Effect-level replication outcome definitions"
-
-df_effect_defs <- tribble(
-  ~Outcome,                          ~Definition,
-  "Success",                         "Original and replication effects were either both significant or both non-significant, and effect sizes were in the same direction.",
-  "Informative Failure to Replicate","The condition for success was not met (e.g., same-direction but non-significant replication, significant effect in the opposite direction, or a null effect).",
-  "Practical Failure to Replicate",  "The replication was not interpretable due to methodological issues (e.g., insufficient sample size, study discontinued).",
-  "Inconclusive",                    "Reporting indicated that the replication result was unclear or conflicted (e.g., multiple tests with differing outcomes, vague hypotheses).")
-
-df_effect_defs %>%
-  kable(align = "l", escape = TRUE) %>%
-  kable_styling(
-    full_width = FALSE,
-    bootstrap_options = c("striped", "hover", "condensed")
-  )
-
-save(df_effect_defs, file = "materials/definitions.RData")
 ```
